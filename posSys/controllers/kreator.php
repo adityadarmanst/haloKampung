@@ -69,6 +69,14 @@ class kreator extends CI_Controller
      $this->load->view('kreator/periksaLogin',$data);
     }
     
+    public function cetakDetails()
+    {
+        $data['email'] = $this->input->post('email');
+     $data['kataSandi'] = $this->input->post('kataSandi');
+     $this->load->view('kreator/periksaLogin',$data);
+        
+    }
+    
     public function ant()
     {
         $data['idAunt'] = $this->input->post('txtKode');
